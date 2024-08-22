@@ -1,68 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  /*
+  --custom-big-stone: #17213c;
+  --custom-bluewood: #283747;
+  --custom-orient: #004e7c;
+  --custom-wedgewood: #457b9d;
+  --custom-eucalyptus: #23856d;
+  --custom-keppel: #47ad97;
+  --custom-tall-poppy: #b73225;
+  --custom-amaranth: #e63946;
+*/
+  --custom-big-stone: 23, 33, 60;
+  --custom-bluewood: 40, 55, 71;
+  --custom-orient: 0, 78, 124;
+  --custom-wedgewood: 69, 123, 157;
+  --custom-eucalyptus: 35, 133, 109;
+  --custom-keppel: 71, 173, 151;
+  --custom-tall-poppy: 183, 50, 37;
+  --custom-amaranth: 230, 57, 70;
 }
