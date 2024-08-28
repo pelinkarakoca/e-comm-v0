@@ -2,7 +2,7 @@ import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="border-customAmaranth border-2">
+    <div className="border-2 border-customAmaranth">
       <HomePage />
     </div>
   );
