@@ -2,13 +2,18 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+      serif: ["Raleway", "sans-serif"],
+      mono: ["Montserrat", "sans-serif"],
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -18,7 +23,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
+        customDarkBlue: "rgb(var(--custom-big-stone))",
+        customBluewood: "rgb(var(--custom-bluewood))",
+        customOrient: "rgb(var(--custom-orient))",
+        customWedgewood: "rgb(var(--custom-wedgewood))",
+        customEucalyptus: "rgb(var(--custom-eucalyptus))",
+        customKeppel: "rgb(var(--custom-keppel))",
+        customTallPoppy: "rgb(var(--custom-tall-poppy))",
+        customAmaranth: "rgb(var(--custom-amaranth))",
+        border: "rgb(var(--custom-eucalyptus))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
@@ -74,4 +87,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

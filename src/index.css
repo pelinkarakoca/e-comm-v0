@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -29,6 +31,14 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --custom-big-stone: 23, 33, 60;
+    --custom-bluewood: 40, 55, 71;
+    --custom-orient: 0, 78, 124;
+    --custom-wedgewood: 69, 123, 157;
+    --custom-eucalyptus: 35, 133, 109;
+    --custom-keppel: 71, 173, 151;
+    --custom-tall-poppy: 183, 50, 37;
+    --custom-amaranth: 230, 57, 70;
   }
 
   .dark {
