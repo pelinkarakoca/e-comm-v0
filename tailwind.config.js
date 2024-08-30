@@ -23,15 +23,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        customDarkBlue: "rgb(var(--custom-big-stone))",
-        customBluewood: "rgb(var(--custom-bluewood))",
-        customOrient: "rgb(var(--custom-orient))",
-        customWedgewood: "rgb(var(--custom-wedgewood))",
-        customEucalyptus: "rgb(var(--custom-eucalyptus))",
-        customKeppel: "rgb(var(--custom-keppel))",
-        customTallPoppy: "rgb(var(--custom-tall-poppy))",
-        customAmaranth: "rgb(var(--custom-amaranth))",
-        border: "rgb(var(--custom-eucalyptus))",
+        border: "rgb(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
@@ -39,10 +31,13 @@ module.exports = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          red: "hsl(var(--primary-red))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          blue: "hsl(var(--secondary-blue))",
+          dark: "hsl(var(--secondary-blue-dark))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
