@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-10 flex h-16 w-full bg-white">
+    <header className="absolute left-0 top-0 z-10 flex h-16 w-full bg-white">
       <div className="container mx-auto flex items-center justify-between border-2">
         <h1 className="inline-block bg-gradient-to-r from-secondary to-secondary-foreground bg-clip-text font-mono text-xl font-extrabold text-transparent">
           novamart

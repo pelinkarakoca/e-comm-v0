@@ -4,6 +4,9 @@ export default function ProductCard() {
       <div className="w-80">
         <img src="../public/assets/headphone.jpg"></img>
         <img src="../public/assets/headphone.jpg"></img>
+        <img src="../public/assets/headphone.jpg"></img>
+        <img src="../public/assets/headphone.jpg"></img>
+        <img src="../public/assets/headphone.jpg"></img>
       </div>
     </div>
   );
