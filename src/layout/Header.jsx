@@ -35,8 +35,8 @@ export default function Header() {
             {/* mobile view */}
             <div className="flex cursor-pointer flex-col lg:hidden">
               <FontAwesomeIcon icon={faBars} onClick={toggleMenu} />
-              {!isOpen && (
-                <div className="fixed left-0 top-16 z-10 flex h-full w-full flex-col items-center justify-start border-2 border-red-500 bg-gray-300 opacity-50">
+              {isOpen && (
+                <div className="fixed left-0 top-16 z-10 flex h-full w-full flex-col items-center justify-start border-2 border-red-500 bg-gray-300 opacity-100">
                   <NavLinks className="flex w-3/4 flex-col space-y-2 text-center" />
                 </div>
               )}
