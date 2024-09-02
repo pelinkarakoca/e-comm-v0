@@ -11,8 +11,8 @@ import { Badge } from "./ui/badge";
 import { ChevronRight, Heart, ShoppingCart, Eye } from "lucide-react";
 export default function ProductCard() {
   const history = useHistory();
-  function handleClick(location) {
-    history.push(`/${location}`);
+  function handleClick(loc) {
+    history.push(`/${loc}`);
   }
   return (
     <div className="h-auto w-96 rounded-2xl border-2 border-blue-800">
