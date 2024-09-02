@@ -90,11 +90,26 @@
   }
 }
 
+/*
 @layer base {
   * {
-    @apply border-border;
+    @apply box-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background font-serif text-foreground;
   }
+}
+*/
+@layer base {
+  * {
+    @apply box-border border-border;
+  }
+  html,
+  body {
+    @apply m-0 h-full bg-background p-0 font-serif;
+  }
+
+  /*#root {
+    @apply min-h-screen;
+  }*/
 }

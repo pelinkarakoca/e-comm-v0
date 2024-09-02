@@ -1,7 +1,39 @@
 export default function Footer() {
-  return (
-    <footer className="relative bottom-0 w-full border-2 border-pink-400 bg-white px-4 py-6 shadow-md">
-      <div className="container mx-auto flex flex-col items-center justify-between md:flex-row">
+  {
+    /* <footer className="relative bottom-0 left-0 w-full border-2 border-pink-400 bg-white px-4 py-6 shadow-md"> */
+  }
+  const infoSections = [
+    {
+      id: 1,
+      title: "Company Info",
+      links: ["About Us", "Carrier", "We are hiring", "Blog"],
+    },
+    {
+      id: 2,
+      title: "Legal",
+      links: ["About Us", "Carrier", "We are hiring", "Blog"],
+    },
+    {
+      id: 3,
+      title: "Features",
+      links: [
+        "Business Marketing",
+        "User Analytic",
+        "Live Chat",
+        "Unlimited Support",
+      ],
+    },
+    {
+      id: 4,
+      title: "Resources",
+      links: ["IOS & Android", "Watch a Demo", "Customers", "API"],
+    },
+  ];
+  return <div className="border-2"></div>;
+
+  /*
+    <footer className="w-full border-2 border-pink-400 bg-white px-4 py-6 shadow-md">
+      <div className="container mx-auto flex flex-col items-center justify-between border-2 border-blue-400 md:flex-row">
         <div className="mb-4 flex flex-col space-x-4 md:mb-0 md:flex-row">
           <div className="flex flex-col">
             <h3 className="mb-2 text-lg font-bold">Company Info</h3>
@@ -95,5 +127,5 @@ export default function Footer() {
         Made With Love By Finland All Right Reserved
       </div>
     </footer>
-  );
+ */
 }
