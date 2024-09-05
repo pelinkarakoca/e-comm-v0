@@ -5,6 +5,7 @@ import ProductCardsContainer from "../layout/ProductCardsContainer";
 import ContentCardsContainer from "../layout/ContentCardsContainer";
 import Footer from "../layout/Footer";
 export default function HomePage() {
+  //TODO : add routers
   const slidesHero = [
     "public/assets/homepage/hero1.jpg",
     "public/assets/homepage/hero2.jpg",

@@ -27,8 +27,8 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="w-full border-2 border-pink-400 bg-white px-4 py-6 shadow-md">
-      <div className="container mx-auto flex flex-col items-center justify-between border-2 border-blue-400 md:flex-row">
+    <footer className="w-full bg-white px-4 py-6 shadow-md">
+      <div className="container mx-auto flex flex-col items-center justify-between md:flex-row">
         <div className="mb-4 flex flex-col space-x-4 md:mb-0 md:flex-row">
           <div className="flex flex-col">
             <h3 className="mb-2 text-lg font-bold">Company Info</h3>
