@@ -4,6 +4,7 @@ export default function ContentCardsContainer({ contents }) {
   const cards = contents.map((content) => (
     <ContentCard key={content.id} content={content} />
   ));
+  // TODO mobile view
   return (
     <div className="mx-auto max-w-7xl py-12 font-mono">
       <div className="mb-12 text-center">

@@ -3,7 +3,7 @@ import Carousel from "../components/Carousel";
 import EditorsPick from "../layout/EditorsPick";
 import ProductCardsContainer from "../layout/ProductCardsContainer";
 import ContentCardsContainer from "../layout/ContentCardsContainer";
-// import Footer from "../layout/Footer";
+import Footer from "../layout/Footer";
 export default function HomePage() {
   const slidesHero = [
     "public/assets/homepage/hero1.jpg",
@@ -136,6 +136,7 @@ export default function HomePage() {
       <ProductCardsContainer products={products} />
       <Carousel slides={carousel2Slide} />
       <ContentCardsContainer contents={contents} />
+      <Footer />
     </div>
   );
 }

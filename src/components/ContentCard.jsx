@@ -1,11 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faDownload,
-  faClock,
-  faPersonChalkboard,
-  faChartSimple,
-} from "@fortawesome/free-solid-svg-icons";
-
+import { faClock, faChartSimple } from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from "react-router-dom";
 import { Badge } from "./ui/badge";
 import { ChevronRight } from "lucide-react";
@@ -14,8 +8,9 @@ export default function ContentCard({ content }) {
   function handleClick(loc) {
     history.push(`/${loc}`);
   }
+  //TODO: mobile view
   return (
-    <div className="h-1/2 w-96 rounded-2xl border-2 border-blue-800">
+    <div className="h-1/2 w-96 rounded-2xl">
       <section className="upperside">
         <div className="relative">
           <Badge variant="destructive" className="absolute left-4 top-4">
