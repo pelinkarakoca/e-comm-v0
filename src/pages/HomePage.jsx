@@ -1,9 +1,8 @@
-import Header from "../layout/Header";
 import Carousel from "../components/Carousel";
 import EditorsPick from "../layout/EditorsPick";
 import ProductCardsContainer from "../layout/ProductCardsContainer";
 import ContentCardsContainer from "../layout/ContentCardsContainer";
-import Footer from "../layout/Footer";
+
 export default function HomePage() {
   //TODO : add routers
   const slidesHero = [
@@ -131,13 +130,11 @@ export default function HomePage() {
 
   return (
     <div>
-      <Header />
       <Carousel slides={slidesHero} />
       <EditorsPick />
       <ProductCardsContainer products={products} />
       <Carousel slides={carousel2Slide} />
       <ContentCardsContainer contents={contents} />
-      <Footer />
     </div>
   );
 }
