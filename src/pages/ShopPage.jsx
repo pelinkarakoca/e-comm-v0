@@ -121,7 +121,7 @@ export default function ShopPage() {
   ];
 
   return (
-    <div>
+    <div className="mx-36">
       <ShopPageHeader />
       <ShopPageFilter />
       <ProductCardsContainer products={products} />

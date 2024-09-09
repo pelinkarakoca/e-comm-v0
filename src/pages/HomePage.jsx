@@ -2,9 +2,10 @@ import Carousel from "../components/ui/Carousel";
 import EditorsPick from "../components/HomepageEditorsPick";
 import ProductCardsContainer from "../components/ProductCardsContainer";
 import ContentCardsContainer from "../components/ContentCardsContainer";
-
+import HomePageProductCardHeader from "../components/HomePageProductCardHeader";
 export default function HomePage() {
   //TODO : add routers
+
   const slidesHero = [
     "public/assets/homepage/hero1.jpg",
     "public/assets/homepage/hero2.jpg",
@@ -132,7 +133,9 @@ export default function HomePage() {
     <>
       <Carousel slides={slidesHero} />
       <EditorsPick />
-      <ProductCardsContainer products={products} />
+      <ProductCardsContainer products={products}>
+        <HomePageProductCardHeader />
+      </ProductCardsContainer>
       <Carousel slides={carousel2Slide} />
       <ContentCardsContainer contents={contents} />
     </>

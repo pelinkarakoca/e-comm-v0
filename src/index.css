@@ -32,7 +32,7 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
   */
-    --background: 0 0% 100%;
+    --background: 0 0% 98%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -106,7 +106,7 @@
   }
   html,
   body {
-    @apply m-0 h-full bg-background p-0 font-serif;
+    @apply m-0 h-full bg-background bg-white p-0 font-serif;
   }
 
   /*#root {
