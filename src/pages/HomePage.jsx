@@ -1,7 +1,7 @@
 import Carousel from "../components/Carousel";
-import EditorsPick from "../layout/EditorsPick";
-import ProductCardsContainer from "../layout/ProductCardsContainer";
-import ContentCardsContainer from "../layout/ContentCardsContainer";
+import EditorsPick from "../components/HomepageEditorsPick";
+import ProductCardsContainer from "../components/ProductCardsContainer";
+import ContentCardsContainer from "../components/ContentCardsContainer";
 
 export default function HomePage() {
   //TODO : add routers
@@ -129,12 +129,12 @@ export default function HomePage() {
   ];
 
   return (
-    <div>
+    <>
       <Carousel slides={slidesHero} />
       <EditorsPick />
       <ProductCardsContainer products={products} />
       <Carousel slides={carousel2Slide} />
       <ContentCardsContainer contents={contents} />
-    </div>
+    </>
   );
 }
