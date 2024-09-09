@@ -1,13 +1,7 @@
 import ProductCardsContainer from "../components/ProductCardsContainer";
-import {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
+import ShopPageHeader from "../components/ShopPageHeader";
+import ShopPageFilter from "../components/ShopPageFilter";
+import ShopPagePagination from "../components/ShopPagePagination";
 export default function ShopPage() {
   const products = [
     {
@@ -128,23 +122,10 @@ export default function ShopPage() {
 
   return (
     <div>
+      <ShopPageHeader />
+      <ShopPageFilter />
       <ProductCardsContainer products={products} />
-      <Pagination>
-        <PaginationContent>
-          <PaginationItem>
-            <PaginationPrevious href="#" />
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink href="#">1</PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationEllipsis />
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationNext href="#" />
-          </PaginationItem>
-        </PaginationContent>
-      </Pagination>
+      <ShopPagePagination />
     </div>
   );
 }

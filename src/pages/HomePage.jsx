@@ -1,4 +1,4 @@
-import Carousel from "../components/Carousel";
+import Carousel from "../components/ui/Carousel";
 import EditorsPick from "../components/HomepageEditorsPick";
 import ProductCardsContainer from "../components/ProductCardsContainer";
 import ContentCardsContainer from "../components/ContentCardsContainer";

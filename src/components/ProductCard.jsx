@@ -1,11 +1,12 @@
 export default function ProductCard({ product }) {
+  //TODO- product card images- mobile view
   return (
     <div
       key={product.id}
       className="overflow-hidden rounded-lg bg-white shadow-lg"
     >
       <img
-        className="h-64 w-full object-cover"
+        className="object-fit h-64 w-full object-cover"
         src={product.image}
         alt={product.title}
       />
@@ -13,8 +14,18 @@ export default function ProductCard({ product }) {
         <h2 className="text-lg font-bold text-gray-800">{product.title}</h2>
         <p className="text-gray-600">{product.department}</p>
         <div className="mt-4 flex items-center justify-between">
-          <span className="text-gray-400 line-through">{product.price}</span>
-          <span className="font-bold text-teal-500">{product.salePrice}</span>
+          <span
+            className={
+              product.salePrice.length
+                ? "text-gray-400 line-through"
+                : "font-bold text-secondary"
+            }
+          >
+            {product.price}
+          </span>
+          <span className="font-bold text-secondary-foreground">
+            {product.salePrice}
+          </span>
         </div>
         <div className="mt-4 flex space-x-2">
           {product.colors.map((color, index) => (
