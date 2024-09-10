@@ -1,9 +1,13 @@
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, direction }) {
   //TODO- product card images- mobile view
   return (
     <div
       key={product.id}
-      className="overflow-hidden rounded-lg bg-white shadow-lg"
+      className={
+        direction
+          ? "flex-col overflow-hidden rounded-lg bg-white shadow-lg"
+          : "flex overflow-hidden rounded-lg bg-white shadow-lg"
+      }
     >
       <img
         className="object-fit h-64 w-full object-cover"

@@ -2,6 +2,7 @@ import ProductCardsContainer from "../components/ProductCardsContainer";
 import ShopPageHeader from "../components/ShopPageHeader";
 import ShopPageFilter from "../components/ShopPageFilter";
 import ShopPagePagination from "../components/ShopPagePagination";
+import { useState } from "react";
 export default function ShopPage() {
   const products = [
     {
@@ -119,12 +120,12 @@ export default function ShopPage() {
       sale: true,
     },
   ];
-
+  const [direction, setDirection] = useState(true);
   return (
     <div className="mx-36">
       <ShopPageHeader />
-      <ShopPageFilter />
-      <ProductCardsContainer products={products} />
+      <ShopPageFilter onDirection={setDirection} />
+      <ProductCardsContainer products={products} direction={direction} />
       <ShopPagePagination />
     </div>
   );

@@ -38,6 +38,7 @@ module.exports = {
           foreground: "hsl(var(--secondary-foreground))",
           blue: "hsl(var(--secondary-blue))",
           dark: "hsl(var(--secondary-blue-dark))",
+          accent: "hsl(var(--secondary-text))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
