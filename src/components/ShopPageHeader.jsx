@@ -10,7 +10,7 @@ import ShopPageHeaderRunner from "./ShopPageHeaderRunner";
 export default function ShopPageHeader() {
   return (
     <div className="bg-[#FAFAFA]">
-      <div className="flex justify-between px-5 py-7">
+      <div className="flex flex-col items-center justify-between space-y-10 lg:flex-row lg:px-5 lg:py-7">
         <h3 className="font-mono text-2xl font-bold leading-8">Shop</h3>
         <div>
           <Breadcrumb>

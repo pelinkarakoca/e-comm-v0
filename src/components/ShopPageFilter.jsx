@@ -9,10 +9,10 @@ export default function ShopPageFilter({ onDirection, numResult = 12 }) {
   };
 
   return (
-    <div className="flex items-center justify-between py-9">
-      <p>Showing {numResult} results </p>
+    <div className="flex flex-col items-center justify-between space-y-6 text-sm font-bold text-accent lg:flex-row lg:py-9">
+      <p className="">Showing {numResult} results </p>
       <div className="flex items-center space-x-2">
-        <span className="font-bold text-accent">Views:</span>
+        <span className="">Views:</span>
         <button
           className="rounded-md border-2 border-[#ECECEC] p-3.5"
           onClick={() => onDirection(true)}

@@ -122,7 +122,7 @@ export default function ShopPage() {
   ];
   const [direction, setDirection] = useState(true);
   return (
-    <div className="mx-36">
+    <div className="mx-10 lg:mx-36">
       <ShopPageHeader />
       <ShopPageFilter onDirection={setDirection} />
       <ProductCardsContainer products={products} direction={direction} />
