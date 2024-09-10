@@ -1,9 +1,10 @@
-import ContentCard from "../components/ContentCard";
-
+import ContentCard from "./ContentCard";
 export default function ContentCardsContainer({ contents }) {
+  console.log(contents);
   const cards = contents.map((content) => (
     <ContentCard key={content.id} content={content} />
   ));
+
   // TODO mobile view
   return (
     <div className="mx-auto max-w-7xl py-12 font-mono">

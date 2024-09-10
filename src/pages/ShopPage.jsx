@@ -1,24 +1,25 @@
-import Carousel from "../components/ui/Carousel";
-import EditorsPick from "../components/HomepageEditorsPick";
 import ProductCardsContainer from "../components/ProductCardsContainer";
-import ContentCardsContainer from "../components/ContentCardsContainer";
-import HomePageProductCardHeader from "../components/HomePageProductCardHeader";
-export default function HomePage() {
-  //TODO : add routers
-
-  const slidesHero = [
-    "public/assets/homepage/hero1.jpg",
-    "public/assets/homepage/hero2.jpg",
-  ];
+import ShopPageHeader from "../components/ShopPageHeader";
+import ShopPageFilter from "../components/ShopPageFilter";
+import ShopPagePagination from "../components/ShopPagePagination";
+import { useState } from "react";
+export default function ShopPage() {
   const products = [
     {
       id: 1,
       title: "Graphic Design",
       department: "English Department",
+      description:
+        "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
       price: "$16.48",
       salePrice: "$6.48",
+      numOfSales: 15,
       colors: ["#6B7280", "#374151", "#111827", "#F59E0B"],
       image: "assets/homepage/product-1.jpg",
+      duration: "22 hr 30 min",
+      lessons: 64,
+      progress: "Progress",
+      sale: true,
     },
     {
       id: 2,
@@ -28,6 +29,11 @@ export default function HomePage() {
       salePrice: "$6.48",
       colors: ["#6B7280", "#374151", "#111827", "#F59E0B"],
       image: "assets/homepage/product-2.jpg",
+      numOfSales: 15,
+      duration: "22 hr 30 min",
+      lessons: 64,
+      progress: "Progress",
+      sale: true,
     },
     {
       id: 3,
@@ -37,6 +43,11 @@ export default function HomePage() {
       salePrice: "$6.48",
       colors: ["#6B7280", "#374151", "#111827", "#F59E0B"],
       image: "assets/homepage/product-3.jpg",
+      numOfSales: 15,
+      duration: "22 hr 30 min",
+      lessons: 64,
+      progress: "Progress",
+      sale: true,
     },
     {
       id: 4,
@@ -46,6 +57,11 @@ export default function HomePage() {
       salePrice: "$6.48",
       colors: ["#6B7280", "#374151", "#111827", "#F59E0B"],
       image: "assets/homepage/product-4.jpg",
+      numOfSales: 15,
+      duration: "22 hr 30 min",
+      lessons: 64,
+      progress: "Progress",
+      sale: true,
     },
     {
       id: 5,
@@ -55,6 +71,11 @@ export default function HomePage() {
       salePrice: "$6.48",
       colors: ["#6B7280", "#374151", "#111827", "#F59E0B"],
       image: "iassets/homepage/product-8.jpg",
+      numOfSales: 15,
+      duration: "22 hr 30 min",
+      lessons: 64,
+      progress: "Progress",
+      sale: true,
     },
     {
       id: 6,
@@ -64,6 +85,11 @@ export default function HomePage() {
       salePrice: "$6.48",
       colors: ["#6B7280", "#374151", "#111827", "#F59E0B"],
       image: "assets/homepage/product-5.jpg",
+      numOfSales: 15,
+      duration: "22 hr 30 min",
+      lessons: 64,
+      progress: "Progress",
+      sale: true,
     },
     {
       id: 7,
@@ -73,6 +99,11 @@ export default function HomePage() {
       salePrice: "$6.48",
       colors: ["#6B7280", "#374151", "#111827", "#F59E0B"],
       image: "assets/homepage/product-6.jpg",
+      numOfSales: 15,
+      duration: "22 hr 30 min",
+      lessons: 64,
+      progress: "Progress",
+      sale: true,
     },
     {
       id: 8,
@@ -82,62 +113,20 @@ export default function HomePage() {
       salePrice: "$6.48",
       colors: ["#6B7280", "#374151", "#111827", "#F59E0B"],
       image: "assets/homepage/product-7.jpg",
+      numOfSales: 15,
+      duration: "22 hr 30 min",
+      lessons: 64,
+      progress: "Progress",
+      sale: true,
     },
   ];
-
-  const carousel2Slide = [
-    "assets/homepage/carousel-2.jpg",
-    "assets/homepage/carousel-2.jpg",
-  ];
-
-  const contents = [
-    {
-      id: 1,
-      imageUrl: "assets/homepage/content-card-1.jpg",
-      title: "Loudest à la Madison #1 (L'integral)",
-      subtitle: "Google Trending New",
-      description:
-        "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-      date: "22 April 2021",
-      comments: 10,
-      tags: ["Google", "Trending", "New"],
-      cta: "Learn More",
-    },
-    {
-      id: 2,
-      imageUrl: "assets/homepage/content-card-2.jpg",
-      title: "Loudest à la Madison #1 (L'integral)",
-      subtitle: "Google Trending New",
-      description:
-        "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-      date: "22 April 2021",
-      comments: 10,
-      tags: ["Google", "Trending", "New"],
-      cta: "Learn More",
-    },
-    {
-      id: 3,
-      imageUrl: "assets/homepage/content-card-3.jpg",
-      title: "Loudest à la Madison #1 (L'integral)",
-      subtitle: "Google Trending New",
-      description:
-        "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-      date: "22 April 2021",
-      comments: 10,
-      tags: ["Google", "Trending", "New"],
-      cta: "Learn More",
-    },
-  ];
-
+  const [direction, setDirection] = useState(true);
   return (
-    <>
-      <Carousel slides={slidesHero} />
-      <EditorsPick />
-      <ProductCardsContainer products={products}>
-        <HomePageProductCardHeader />
-      </ProductCardsContainer>
-      <Carousel slides={carousel2Slide} />
-      <ContentCardsContainer contents={contents} />
-    </>
+    <div className="mx-10 lg:mx-36">
+      <ShopPageHeader />
+      <ShopPageFilter onDirection={setDirection} />
+      <ProductCardsContainer products={products} direction={direction} />
+      <ShopPagePagination />
+    </div>
   );
 }
