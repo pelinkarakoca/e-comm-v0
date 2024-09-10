@@ -13,7 +13,9 @@ function App() {
           </PageContent>
         </Route>
         <Route path="/shop">
-          <ShopPage />
+          <PageContent>
+            <ShopPage />
+          </PageContent>
         </Route>
       </Switch>
     </Router>
